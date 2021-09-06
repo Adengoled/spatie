@@ -15,6 +15,12 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    @role('superadmin')
+                    I am a writer!
+                    @else
+                    I am not a writer...
+                    @endrole
+
                 </div>
             </div>
         </div>
